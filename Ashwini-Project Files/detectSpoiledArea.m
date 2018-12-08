@@ -20,7 +20,7 @@ pixelCount(1) = 0;
 
 % Call anything with a hue of between 0.15 and 0.5 "healthy".
 healthyImage = (h > 0.105) & (h < 0.9);
-% Call anything else (that is not background) "diseased."
+% Call anything else (that is not background) "spoiled."
 spoiledImage = ~healthyImage & ~background;
 
 % Compute the diseased area fraction
